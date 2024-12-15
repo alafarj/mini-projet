@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Résultats</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <h1>Résultats du diagnostic</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Maladie détectée :</h2>
+            <p id="maladie"></p>
+        </section>
+        <section>
+            <h2>Moyens de lutte :</h2>
+            <p id="solutions"></p>
+        </section>
+
+    </main>
+    <button onclick="window.location.href='index2.html'" class="button">&#x2B05;Retour</button>
+    <footer>
+        <p>&copy;  Alae Farjallah </p>
+    </footer>
+    <script>
+        // Charger les résultats depuis localStorage
+        document.getElementById("maladie").textContent = localStorage.getItem("maladie") || "Aucune maladie détectée.";
+        document.getElementById("solutions").textContent = localStorage.getItem("solutions") || "Pas de solutions disponibles.";
+    </script>
+</body>
+</html>

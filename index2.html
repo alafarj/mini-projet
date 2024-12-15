@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html >
+  <head>
+<title>Diagnostic des céréales</title>
+<link rel="stylesheet" href="index.css">
+
+  </head>
+  <body>
+    <header>
+      <img  class="logo" src="images/logo.png" >
+      
+    </header>
+    <body>
+   <div class="sur-quelle">
+    <p>Sur quelle partie de la plante observez-vous les symptômes ?</p>
+  </div>
+  <div class="cards">
+    <div class="card" data-cereale="blé" data-organe="grain" onclick="afficherResultat('blé', 'grain')">
+        <img class="card-image" src="images/grain.jpeg">
+        <div class="card-title">Grain</div>
+    </div>
+    <div class="card" data-cereale="blé" data-organe="épi" onclick="afficherResultat('blé', 'épi')">
+        <img class="card-image" src="images/tige.webp">
+        <div class="card-title">Épi</div>
+    </div>
+    <div class="card" data-cereale="orge" data-organe="épi" onclick="afficherResultat('orge', 'épi')">
+        <img class="card-image" src="images/racine.webp">
+        <div class="card-title">Racine</div>
+    </div>
+    <div class="card" data-cereale="avoine" data-organe="panicule" onclick="afficherResultat('avoine', 'panicule')">
+        <img class="card-image" src="images/panicule.jpg">
+        <div class="card-title">Panicule</div>
+    </div>
+  </div>
+ 
+    
+   <button class="button" type="submit" > <a href="index.html" style="text-decoration: none; color: white;" > &#x2B05; Retour  </a> </button>
+    </body>
+    <footer>
+      <p>&copy;  Alae Farjallah </p>
+      </footer>
+      
+      <script src="index2.js"></script>
+    </html>
+    

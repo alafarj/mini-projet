@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Diagnostic des Céréales</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a href="#" aria-label="Page d'accueil">
+          <img class="logo" src="images/logo.png" alt="Logo" />
+        </a>
+
+        <div class="nav-links">
+          <a href="index4.html">Qui sommes-nous ?</a>
+          <a href="index5.html">Actualités</a>
+          <a href="index6.html">Fiches plante</a>
+        </div>
+      </nav>
+
+      <div class="Bienvenue">
+        <h1>Bienvenue sur votre outil de santé des céréales !</h1>
+      </div>
+
+      <div class="Identifiez">
+        <p>
+          Identifiez rapidement les maladies affectant vos céréales et découvrez
+          des conseils pratiques pour préserver et soigner vos cultures.
+        </p>
+      </div>
+    </header>
+
+    <main>
+      <section id="questionnaire">
+        <div class="Diagnostic">Diagnostiquez vos Céréales</div>
+
+        <form class="Choisissez">
+          <select
+            id="plante"
+            name="plante"
+            required
+            aria-label="Sélection de céréale"
+          >
+            <option value="" disabled selected>Choisissez une céréale</option>
+            <option value="blé">Blé</option>
+            <option value="orge">Orge</option>
+            <option value="avoine">Avoine</option>
+            <option value="maïs">Maïs</option>
+            <option value="seigle">Seigle</option>
+            <option value="blé tendre">Blé tendre</option>
+          </select>
+
+          <a href="index.html" class="button" role="button">
+            Débuter le Diagnostic &#10132;
+          </a>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Alae Farjallah</p>
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>
